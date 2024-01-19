@@ -1,7 +1,7 @@
-# Sentiment Analysis through My WhatsApp Messages &middot; [![Build Status][![npm][![PRs Welcome][![GitHub license]
+# Location & Traveling Analysis through Galery Metadata &middot
 > The detailed results and steps are given in the .ipynb 
 
-A project that contains creating json data from a photo galery which has GPS Infos, DateTime and File Name Informations. Visualize these metadata and mark on map. conducts sentiment analysis on photos taken, exploring patterns and intensity of the statistical datas.
+A project that contains creating JSON data from a photo gallery which has GPS Infos, DateTime and File Name information. Visualize these metadata and mark them on map. conducts sentiment analysis on photos taken, exploring patterns and intensity of the statistical data.
 
 ## Installing / Getting Started
 
@@ -72,15 +72,15 @@ Verify the correctness and consistency of geographical coordinates, addressing a
 - Setting the Data Frame 
   - Setting the proper data frame and diversifying columns for detailed analysis.
 
-### Habit Analysis
-> After the data collection, the intensity of the conversation is observed according to time and date
-- Get the intensity of messages
-- Observe them by the periods of the day
-- Combine this knowledge with the sentiment score of the messages
+### Visualization on Map
+> After the data collection in the main.py, necessary location and time data are marked on the map via locator.py
+- Folium library's MarkerCluster function is used.
+- Observe them with clustered shapes for easy viewing.
+- Easy access to the photo itself via popup features of marks.
 
 ## Findings
 
-### Sentiment Correlations Findings:
+### Correlations Findings:
 
 #### Analysis of Weighted Sentiment Over Time to Derive a Correlation Heatmap
 In this analysis, I examine the trends in weighted sentiment over time by grouping the data based on date and time slots. The weighted sentiment is calculated and averaged for each group, resulting in a pivot table that provides insights into sentiment patterns during different times of the day.
